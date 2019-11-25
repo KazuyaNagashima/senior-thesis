@@ -15,7 +15,7 @@ mv ${filename[k]}_S1_L001_R2_001.fastq.gz ${dir}/${filename[k]}/${filename[k]}_S
 
 cd ${dir}/${filename[k]}
 
-#quality check by fastp
+#quality check with fastp
 
 fastp -i ${filename[k]}_S1_L001_R1_001.fastq.gz -I ${filename[k]}_S1_L001_R2_001.fastq.gz -o fastp_${filename[k]}_S1_L001_R1_001.fastq.gz -O fastp_${filename[k]}_S1_L001_R2_001.fastq.gz -h report_fastp.html -j report_fastp.json -q 25 -n 10 -w 14 --length_required 20 --length_limit 500
 

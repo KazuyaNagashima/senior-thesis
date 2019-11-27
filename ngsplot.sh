@@ -7,7 +7,7 @@ ngs_ref=("susScr11")
 date="19.11.20"
 ######################
 
-#inport data in directory
+# import data in directory
 
 dir="/home/ohganelab/Desktop/nagashima"
 cd ${dir}/comparison
